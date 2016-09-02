@@ -33,11 +33,16 @@ gem 'rspec-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :test do
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara'
+
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails'
-  gem 'capybara'
 end
 
 group :development do
